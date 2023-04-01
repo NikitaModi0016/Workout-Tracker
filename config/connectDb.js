@@ -7,7 +7,7 @@ const connectDb = async () => {
   } catch (error) {
     console.log(`${error}`.bgRed);
   }
-  
+  mongoose.set('strictQuery', false);
 
 };
 
