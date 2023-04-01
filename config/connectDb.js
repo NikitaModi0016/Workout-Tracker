@@ -7,16 +7,7 @@ const connectDb = async () => {
   } catch (error) {
     console.log(`${error}`.bgRed);
   }
-  app.all('*', (req,res) => {
-    res.json({"every thing":"is awesome"})
-})
-
-//Connect to the database before listening
-connectDB().then(() => {
-    app.listen(PORT, () => {
-        console.log("listening for requests");
-    })
-})
+  
 
 };
 
